@@ -1,0 +1,23 @@
+
+.thank-you-body {
+    padding-top: 200px
+}
+
+.thank-you-h1 {
+    text-align: center;
+    font-family: var(--fontSerif);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.thank-you-h1 span{
+    color: var(--secondary)
+}
+
+.thank-you-body .thank-you-main p{
+    color: var(--black);
+    opacity: 0.7;
+    font-family: var(--fontSansSerif);
+    margin: 25px 0 100px;
+    text-align: center;
+}

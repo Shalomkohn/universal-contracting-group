@@ -1,0 +1,33 @@
+
+.gallery-main {
+    background-color: var(--light);
+}
+
+.gallery-main h1 {
+    font-family: var(--fontSerif);
+    padding: 150px 25px 50px;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+}
+
+.gallery-main h1 span {
+    color: var(--secondary);
+}
+
+.gallery-main .container {
+    margin: 0 auto;
+}
+
+.gallery-main .container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-bottom: 24px;
+}
+
+@media screen and (max-width: 990px) {
+    .gallery-main h1 {
+        font-size: 40px;
+    }
+}

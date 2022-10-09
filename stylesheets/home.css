@@ -1,0 +1,268 @@
+
+/* main content section 1 and 2 **************************************************************************************** */
+.main-content-section .container{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.main-content-section .container .text-box{
+    width: 50%;
+    padding: 50px;
+}
+
+.main-content-section .container .text-box h2{
+    font-size: 60px;
+    font-family: var(--fontSerif);
+
+}
+
+.main-content-section .container .text-box h2 span{
+    color: var(--secondary);
+    font-weight: lighter;
+}
+
+.main-content-section .container .text-box p{
+    max-width: 300px;
+    padding-left: 25px;
+    margin: 50px 0;
+    border-left: 3px solid var(--secondary);
+}
+
+.main-content-section .container .image-box {
+    width: 50%;
+    padding: 50px;
+}
+
+.main-content-section .container .image-box img {
+    width: 100%;
+}
+
+.main-content-section-2{
+    background-color: var(--light);
+}
+
+.main-content-section-3 .container .text-box button {
+    border: none;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: var(--fontSansSerif);
+    font-size: 20px;
+    color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    transition-duration: .2s;
+}
+
+.main-content-section-3 .container .text-box button:hover {
+    color: var(--black);
+    background-color: transparent;
+    border-color: var(--secondary);
+}
+
+.main-content-section-3 .container .text-box button a {
+    text-decoration: none;   
+    color: unset; 
+}
+
+.main-content-section-3 .container .text-box button a .fa-chevron-right {
+  color: var(--secondary);
+  font-size: 16px;
+}
+
+
+/* what we did section **************************************************************************************** */
+
+.what-we-did-section {
+    background-color: var(--light);
+}
+
+.what-we-did-section .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.what-we-did-section .container h2 {
+    font-size: 60px;
+    text-align: center;
+    padding: 50px;
+    font-family: var(--fontSerif);
+    margin: 0;
+}
+
+.what-we-did-section .container .projects-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.what-we-did-section .container .projects-box .project {
+    height: 200px;
+    width: 200px;
+    overflow-y: hidden;
+    transition-duration: .4s;
+    margin: 0 auto 65px;
+}
+
+.what-we-did-section .container .projects-box .project .top-half .project-title {
+    font-size: 20px;
+}
+
+.what-we-did-section .container .projects-box .project:hover {
+    height: 400px;
+    transform: scale(1.3);
+    box-shadow: 0px 0px 20px #aaa;
+    margin: 35px auto 100px;
+    border-radius: 3px;
+}
+
+.what-we-did-section .container .projects-box .project:hover > .top-half .project-title{
+    opacity: 0;
+    font-size: 0px;
+    transition-duration: .4s;
+}
+
+.what-we-did-section .container .projects-box .project:hover > .top-half .fa-chevron-down {
+    margin-bottom: -15px;
+    opacity: 0;
+    transition-duration: .4s;
+}
+
+.what-we-did-section .container .projects-box .project .top-half{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.what-we-did-section .container .projects-box .project .bottom-half {
+    padding: 10px;
+}
+
+.what-we-did-section .container .projects-box .project .top-half .project-title {
+    color: white;
+    padding-left: 10px;
+    border-left: 3px solid var(--secondary);
+}
+
+.what-we-did-section .container .projects-box .project .top-half .fa-chevron-down {
+    border: none;
+    background: transparent;
+    color: var(--secondary);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.what-we-did-section .container .projects-box .project-1 .top-half{
+    background-image: url(/images/shainas-kitchen.jpeg);
+}
+
+.what-we-did-section .container .projects-box .project-2 .top-half{
+    background-image: url(/images/school-bathroom.jpg);
+}
+
+.what-we-did-section .container .projects-box .project-3 .top-half{
+    background-image: url(/images/gallery/fireplace.jpeg);
+}
+
+/* reels **************************************************************************************** */
+
+.reels-section .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.reels-section .container h2 {
+    font-size: 60px;
+    max-width: 830px;
+    text-align: center;
+    padding: 50px 0;
+    font-family: var(--fontSerif);
+    margin: 0 auto;
+    border-bottom: 3px solid var(--primary);
+
+}
+
+.reels-section .container .reels-box {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.reels-section .container .reels-box .reel {
+    display: flex;
+    padding: 50px;
+}
+
+.reels-section .container .reels-box .reel video{
+    object-fit: cover;
+}
+
+/* media querys **************************************************************************************** */
+
+
+@media screen and (max-width: 990px) {
+    .main-content-section .container .text-box h2,
+    .what-we-did-section .container h2,
+    .reels-section .container h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .main-content-section-1 .container,
+    .main-content-section-3 .container{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .main-content-section-2 .container{
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    .main-content-section-1 .container .text-box p{
+        margin: 50px 0 0 0;
+    }
+
+    .main-content-section .container .text-box,
+    .main-content-section .container .image-box{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .main-content-section .container .text-box {
+        padding: 50px 50px 0;
+    }
+
+    .what-we-did-section .container {
+        padding: 0;
+    }
+
+    .what-we-did-section .container h2 {
+        text-align: start;
+    }
+
+    .what-we-did-section .container .projects-box {
+        flex-direction: column;
+    }
+
+    .what-we-did-section .container .projects-box .project .top-half{
+        flex-direction: column;
+        margin: 0 auto 50px;
+    }
+
+    .reels-section .container h2 {
+        text-align: start;
+    }
+}
