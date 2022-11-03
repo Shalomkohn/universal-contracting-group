@@ -12,8 +12,9 @@
     box-sizing: border-box;
     --black: #262223;
     --primary: #32628C;
-    --secondary: #E19E20;
+    /* --secondary: #E19E20; */
     /* nicer secondary(gold) #d4af37 */
+    --secondary: #d4af37;
     --light: #E6F4F1;
     --primaryLight: #6994C2;
     --secondaryLight: #FFEDCB;

@@ -54,7 +54,7 @@
 }
 
 .contact-main .call-us-box .call-us-bar {
-    padding: 10px 50px;
+    padding: 10px 25px;
     border-radius: 3px;
     background-color: var(--light);
 }
@@ -89,7 +89,7 @@
 .contact-main .contact-us-box .contact-us-form {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 25px;
     border: 1px solid var(--primary);
     border-radius: 3px;
 }
@@ -138,20 +138,16 @@
         text-align: start;
     }
 
-    .contact-main .contact-us-box {
-        padding: 25px;
-    }
-
-    .contact-main .contact-us-box .contact-info-input {
+    .contact-main .contact-us-box .contact-us-form .contact-info-input {
         display: block;
     }
 
-    .contact-main .contact-us-box .contact-info-input .email {
+    .contact-main .contact-us-box .contact-us-form .contact-info-input .email {
         margin-left: 0px;
         margin-top: 20px;
     }
 
-    .contact-main .contact-us-box button {
+    .contact-main .contact-us-box .contact-us-form button {
         width: 100%;
     }
 }
