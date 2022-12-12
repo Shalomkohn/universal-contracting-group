@@ -133,7 +133,7 @@ header .lead {
     top: 75px;
 }
 
-header .fa-chevron-down {
+header .index-page-sroll-down .fa-chevron-down {
     position: absolute;
     left: 50%;
     bottom: 25px;

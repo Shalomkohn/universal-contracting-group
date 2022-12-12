@@ -1,0 +1,152 @@
+.hero {
+    background: url(../images/nails-and-hammer.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .container {
+    position: absolute;
+    padding: 50px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--black);
+}
+
+.hero .container h1{
+    font-size: 30px;
+    font-family: var(--fontSerif);
+}
+
+.hero .container h2 {
+    opacity: 0.7;
+    font-size: 19px;
+}
+
+.hero .container .small-line {
+    margin: 40px auto 0;
+    width: 70px;
+    height: 2px;
+    background-color: var(--secondary);
+}
+
+.hero .container h3 {
+    padding-top: 80px;
+    font-size: 45px;
+    font-weight: 400;
+    font-family: var(--fontSansSerif);
+}
+
+.hero .container button {
+    background-color: var(--secondary);
+    padding: 10px 15px;
+    border: none;
+    margin-top: 10px;
+}
+
+.hero .container button a {
+    color:  var(--black);
+    text-decoration: none;
+}
+
+.hero .container button a i {
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.hero .small-jobs-page-sroll-down .fa-chevron-down {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    color: var(--black);
+    opacity: 0.7;
+    font-size: 25px;
+    z-index: 3;
+}
+
+.services-section {
+    padding: 150px 0;
+}
+
+.picture-section .container .row {
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.services-section .container .row div {
+    padding-top: 5px;
+}
+
+.picture-section .container .row img{
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    padding-bottom: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .hero .container {
+        padding: 50px 20px;
+    }
+
+    .hero .container h3 {
+        font-size: 25px;
+    }
+    
+    .services-section {
+        padding: 0;
+    }
+
+    .services-section .services-button {
+        margin: 40px;
+        padding: 5px 15px;
+        border-bottom: 1px solid var(--black);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .services-section .services-button .fa-chevron-down {
+        transition-duration: .3s;
+    }
+
+    .services-section .services-button .fa-chevron-down.face-up {
+        transform: rotateX(180deg);
+    }
+
+    .services-section .container .row{
+        padding: 0 50px;
+        overflow-y: hidden;
+        height: 0;
+        transition-duration: .8s;
+        position: absolute;
+        background-color: rgba(255, 255, 255, .93);
+    }
+
+    .services-section .container .row.opened {
+        height: 1036px;
+        padding-bottom: 40px;
+
+    }
+    
+    .picture-section .container{
+        padding: 40px;
+    }
+
+    .picture-section .container .row img {
+        max-height: 300px;
+    }
+    
+}

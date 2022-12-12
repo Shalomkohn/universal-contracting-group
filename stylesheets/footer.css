@@ -33,6 +33,10 @@ footer .container .rows {
     align-items: center;
 }
 
+footer .container .rows .row-1 p a{
+    color: inherit;
+}
+
 footer .container .rows .row-1 .fa-solid {
     margin-right: 20px;
 }
@@ -50,7 +54,7 @@ footer .container .rows .row-2 ul {
 
 footer .container .rows .row-2 ul li {
     list-style: none;
-    padding: 0px 0;
+    padding: 5px 0;
     transition-duration: 0.2s;
 }
 

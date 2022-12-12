@@ -73,3 +73,24 @@ document.addEventListener("click", (e) => {
         }
     })
 })
+
+// *********************************************************    service list open / collapse     *************************************************************************
+
+
+let servicesButton = document.querySelector("#services-button");
+let servicesButtonChevron = document.querySelector("#services-button-chevron");
+let servicesList = document.querySelector("#services-list");
+
+const handleServicesList = () => {
+    if(servicesButtonChevron.classList.contains('face-up')){
+        servicesButtonChevron.classList.remove('face-up');
+        servicesList.classList.remove('opened');
+    } else {
+        servicesButtonChevron.classList.add('face-up')
+        servicesList.classList.add('opened');
+    }
+}
+
+servicesButton.addEventListener('click', handleServicesList)
+
+

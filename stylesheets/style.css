@@ -5,6 +5,7 @@
 @import "./footer.css";
 @import "./about.css";
 @import "./gallery.css";
+@import "./small-jobs.css";
 
 * {
     margin: 0;
