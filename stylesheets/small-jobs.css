@@ -47,21 +47,23 @@
     font-family: var(--fontSansSerif);
 }
 
-.hero .container button {
+.hero .container button,
+.tsjp-picture button {
     background-color: var(--secondary);
-    padding: 10px 15px;
+    padding: 10px 25px;
     border: none;
     margin-top: 10px;
 }
 
-.hero .container button a {
-    color:  var(--black);
-    text-decoration: none;
+.hero .container button:hover,
+.tsjp-picture button:hover {
+    transform: translateY(2px);
 }
 
-.hero .container button a i {
-    font-size: 15px;
-    margin-left: 3px;
+.hero .container button a,
+.tsjp-picture button a {
+    color:  var(--black);
+    text-decoration: none;
 }
 
 .hero .small-jobs-page-sroll-down .fa-chevron-down {
@@ -96,6 +98,36 @@
     padding-bottom: 24px;
 }
 
+.services-section .container .row .col-sm-6 {
+    padding-top: 10px;
+}
+
+.tsjp-picture {
+    height: 300px;
+    overflow: hidden;
+    background-image: url("../images/more-tools.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.tsjp-picture::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.tsjp-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tsjp-picture button {
+    position: absolute;
+}
+
 @media screen and (max-width: 767px) {
     .hero .container {
         padding: 50px 20px;
@@ -106,32 +138,13 @@
     }
     
     .services-section {
-        padding: 0;
-    }
-
-    .services-section .services-button {
-        margin: 40px;
-        padding: 5px 15px;
-        border-bottom: 1px solid var(--black);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .services-section .services-button .fa-chevron-down {
-        transition-duration: .3s;
-    }
-
-    .services-section .services-button .fa-chevron-down.face-up {
-        transform: rotateX(180deg);
+        padding-top: 50px;
     }
 
     .services-section .container .row{
-        padding: 0 50px;
+        padding: 0px 50px;
         overflow-y: hidden;
-        height: 0;
         transition-duration: .8s;
-        position: absolute;
         background-color: rgba(255, 255, 255, .93);
     }
 
@@ -147,6 +160,10 @@
 
     .picture-section .container .row img {
         max-height: 300px;
+    }
+
+    .tsjp-picture {
+        height: 200px;
     }
     
 }

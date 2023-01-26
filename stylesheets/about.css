@@ -1,6 +1,6 @@
 
 .about-main .about-top-section{
-    background-image: url(../images/gallery/new-room-before.jpg);
+    background-image: url(../images/shainas-kitchen.jpeg);
     height: 400px;
     background-size: cover;
     background-position: center;
@@ -14,16 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.about-main .about-top-section .overlay .content-box {
-    padding: 0 25px;
-}
-
-.about-main .about-top-section .overlay .content-box h1 {
-    font-family: var(--fontSerif);
-    max-width: 600px;
-    text-align: center;
 }
 
 .about-bottom-section .container {
@@ -41,18 +31,21 @@
 .about-bottom-section .container .content-box {
     padding: 100px 50px;
     color: var(--black);
-}
+    max-width: 650px;
+    margin: auto;
+} 
 
 .about-bottom-section .container .content-box h2 {
     font-family: var(--fontSerif);
     font-size: 60px;
     padding-left: 25px;
     border-left: 3px solid var(--primary);
+    margin-bottom: 50px;
 }
 
 .about-bottom-section .container .content-box p {
-    margin: 50px 0;
     font-family: var(--fontSansSerif);
+    line-height: 2;
 }
 
 .about-bottom-section .container .content-box button {
@@ -65,6 +58,7 @@
     border: 3px solid var(--primary);
     border-radius: 1px;
     transition-duration: .2s;
+    margin-top: 50px;
 }
 
 .about-bottom-section .container .content-box button:hover {
@@ -79,6 +73,14 @@
 
 
 @media screen and (max-width: 990px) {
+
+    .about-main .about-top-section{
+        height: 200px;
+    }
+
+    .about-main .about-top-section .overlay {
+        height: 200px;
+    }
 
     .about-bottom-section .container {
         flex-direction: column;

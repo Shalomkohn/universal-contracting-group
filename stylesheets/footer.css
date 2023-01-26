@@ -1,6 +1,6 @@
 
 footer {
-    background-color: var(--primaryLight);
+    background-color: var(--light);
     font-family: var(fontSansSerif);
     padding: 50px 50px 0;
 }

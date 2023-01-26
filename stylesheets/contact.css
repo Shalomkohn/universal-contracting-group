@@ -19,19 +19,21 @@
     justify-content: center;
 }
 
-.contact-main .contact-top-section .overlay .content-box {
+.contact-main .contact-bottom-section .content-box {
     padding: 0 25px;
     position: relative;
     top: 50px;
+    text-align: center;
+    margin: 0 auto 150px;
 }
 
-.contact-main .contact-top-section .overlay .content-box h1 {
+.contact-main .contact-bottom-section .content-box h1 {
     font-family: var(--fontSerif);
     max-width: 600px;
-    text-align: center;
+    margin: auto;
 }
 
-.contact-main .contact-top-section .overlay .content-box  p {
+.contact-main .contact-bottom-section .content-box  p {
     font-size: 16px;
     font-family: var(--fontSansSerif);
     color: var(--black);
@@ -133,6 +135,15 @@
 }
 
 @media screen and (max-width: 600px){
+    .contact-main .contact-top-section{
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+
+    .contact-main .contact-top-section .overlay {
+        height: 200px;
+    }
 
     .contact-main .contact-top-section .overlay .content-box h1 {
         text-align: start;

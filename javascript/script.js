@@ -62,17 +62,21 @@ const handleScrollAnimation = () => {
 
 // *********************************************************    On Click Styling     *************************************************************************
 
-let projectBoxes = document.querySelectorAll(".project");
 
-document.addEventListener("click", (e) => {
-    projectBoxes.forEach((projectBox) => {
-        if(!projectBox.contains(e.target)){
-            projectBox.classList.remove("active")
-        } else {
-            projectBox.classList.add("active")
-        }
-    })
-})
+// **** This was for "What we've been up to section" which was taken away indefinetly (it opened up each box on click) *****
+
+
+// let projectBoxes = document.querySelectorAll(".project");
+
+// document.addEventListener("click", (e) => {
+//     projectBoxes.forEach((projectBox) => {
+//         if(!projectBox.contains(e.target)){
+//             projectBox.classList.remove("active")
+//         } else {
+//             projectBox.classList.add("active")
+//         }
+//     })
+// })
 
 // *********************************************************    service list open / collapse     *************************************************************************
 
